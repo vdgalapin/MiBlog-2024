@@ -11,3 +11,8 @@
     do not include in the export
         venv/
         __pycache__/
+8. Login to herok with heroku login
+9. Create procfile which tells heroku how to run the app    
+    echo "web:gunicorn app:app" > Procfile
+    then install gunicorn  
+        python3 -m pip install gunicorn
