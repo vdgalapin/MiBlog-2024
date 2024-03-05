@@ -39,7 +39,7 @@ MarkupSafe==2.1.1
 # toml==0.10.2
 typing_extensions==4.5.0
 # urllib3==2.0.2
-Werkzeug==2.2.3
+# Werkzeug==2.2.3
 # xlrd==2.0.1
 # XlsxWriter==3.0.3
 # zipp==3.15.0
