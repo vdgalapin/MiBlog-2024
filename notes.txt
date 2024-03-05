@@ -3,7 +3,7 @@
 3. Depends on what platform is used
         git source venv/Scripts/activate
 4. Create requirements text for every dependency
-        python3 -m pip freeze > requirement.txt
+        python3 -m pip freeze > requirements.txt
 5. Create app.py
 6. set the FLASK_APP environments
     export FLASK_APP=app.py
