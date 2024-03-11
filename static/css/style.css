@@ -1,0 +1,28 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+
+
+@media (max-width: 1100px) {
+    .wide-image-post {
+        width: 390px;
+    }
+}
+
+@media (max-width: 920px) {
+    .wide-image-post {
+        width: 550px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .wide-image-post {
+        width: 330px;
+    }
+}

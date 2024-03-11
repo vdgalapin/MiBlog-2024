@@ -7,12 +7,44 @@
 5. Create app.py
 6. set the FLASK_APP environments
     export FLASK_APP=app.py
+    run it by 
+        flask run
 7. git init - creates __pycache__
     do not include in the export
         venv/
         __pycache__/
 8. Login to herok with heroku login
 9. Create procfile which tells heroku how to run the app    
-    echo "web:gunicorn app:app" > Procfile
+    echo "web: gunicorn 'app:app'" > Procfile
     then install gunicorn  
         python3 -m pip install gunicorn
+10. Remove some stuff in the requirements.txt that we don't need before pushing it to the heroku master
+        git add .
+        git commit -m 'comments'
+        git push heroku master
+
+
+Designing
+1. Create the template and static folder
+    template will have html files
+    static will have the css, images, and scripts
+
+2. add base and then index html.
+        base will be like the layout for every page.
+        index will be the initial page.
+
+3. Add the requirements in the base html that including the bootstrap, react, jquery, and babel.
+        The react needs babel and jquery to make it work.
+        If you are going to link the react script make sure its type is "text/babel"
+            To create a functional and class components.
+                function component return a html content
+                class component renders the return html content
+                To let them be use is to ReactDOM.render(<function or class name />, document.getElemtById('whatever_name'));
+            To use the react function and class component is to use it by id with ng-app in the body.
+
+4. To use the base html layout to index html is to 
+    {% extends 'base.html' %}
+
+5. To use the contents in the index html to the base html is to     
+    {% block whatever_name %}
+    {% endblock %}
