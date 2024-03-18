@@ -42,7 +42,7 @@ Designing
                 To let them be use is to ReactDOM.render(<function or class name />, document.getElemtById('whatever_name'));
             To use the react function and class component is to use it by id with ng-app in the body.
 
-4. To use the base html layout to index html is to 
+4. To use the base html layout to index html is to (DJANGO)
     {% extends 'base.html' %}
 
 5. To use the contents in the index html to the base html is to     
